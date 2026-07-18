@@ -1,3 +1,5 @@
+import SteamIron from "./SteamIron";
+
 // all 4 real branch locations from their actual website + directory listings
 const BRANCHES = [
   {
@@ -36,8 +38,9 @@ const BRANCHES = [
 
 export default function Branches() {
   return (
-    <section id="branches" className="py-28 bg-brand-silver-light">
-      <div className="max-w-[1200px] mx-auto px-7">
+    <section id="branches" className="py-28 bg-brand-silver-light dark:bg-brand-char-mid relative overflow-hidden">
+      <SteamIron side="left" />
+      <div className="max-w-[1200px] mx-auto px-7 relative z-[2]">
         <div className="max-w-[640px] mb-14">
           <span className="text-[10.5px] font-bold tracking-[0.18em] uppercase text-brand-cyan block mb-3.5">
             Find Us
