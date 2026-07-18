@@ -55,6 +55,16 @@ export default function Header() {
             Contact
           </Link>
 
+          {/* dark/light mode toggle */}
+          <button
+            onClick={() => document.documentElement.classList.toggle("dark")}
+            className="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-sm hover:bg-white/20 transition-all"
+            aria-label="Toggle dark mode"
+          >
+            <span className="dark:hidden">☾</span>
+            <span className="hidden dark:inline">☀</span>
+          </button>
+
           {/* cart icon with badge */}
           <Link to="/order" className="relative text-[13.5px] font-medium opacity-75 hover:opacity-100 transition-all">
             🛒
