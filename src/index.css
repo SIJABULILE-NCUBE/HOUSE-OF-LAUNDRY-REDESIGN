@@ -20,6 +20,19 @@
   50% { transform: rotate(2.2deg); }
 }
 
+@keyframes steamrise {
+  0% { transform: translateY(0) scaleX(1); opacity: 0; }
+  15% { opacity: 0.7; }
+  100% { transform: translateY(-110px) scaleX(1.8); opacity: 0; }
+}
+
+/* dark mode overrides for glass panels */
+.dark .glass-panel {
+  background: linear-gradient(145deg, rgba(30,40,50,0.8), rgba(20,28,36,0.5));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 12px 32px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
 .glass-panel {
   background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(232,236,239,0.5));
   border: 1px solid rgba(255,255,255,0.9);
