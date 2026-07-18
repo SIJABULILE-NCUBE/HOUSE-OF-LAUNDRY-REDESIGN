@@ -1,5 +1,4 @@
 import { useCart } from "../context/CartContext";
-import SteamIron from "./SteamIron";
 
 // the clothesline with swaying pegs - traditional wooden peg shape, glass pink
 function PegLine() {
@@ -169,7 +168,16 @@ export default function Services() {
 
   return (
     <section id="services" className="py-28 bg-brand-silver-light dark:bg-brand-char-mid relative overflow-hidden">
-      <SteamIron side="right" />
+      {/* background steam that rises across the section */}
+      <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden">
+        <span className="absolute w-[40px] h-[200px] rounded-full bg-gray-800/15 dark:bg-white/10 blur-[20px] bottom-0 left-[8%]" style={{ animation: "steamrise 5s ease-in-out infinite" }} />
+        <span className="absolute w-[50px] h-[250px] rounded-full bg-gray-800/12 dark:bg-white/8 blur-[25px] bottom-0 left-[30%]" style={{ animation: "steamrise 6s ease-in-out infinite 1.5s" }} />
+        <span className="absolute w-[60px] h-[300px] rounded-full bg-gray-800/14 dark:bg-white/10 blur-[30px] bottom-0 right-[12%]" style={{ animation: "steamrise 5.5s ease-in-out infinite 0.8s" }} />
+        <span className="absolute w-[45px] h-[220px] rounded-full bg-gray-800/10 dark:bg-white/7 blur-[22px] bottom-0 right-[35%]" style={{ animation: "steamrise 6.5s ease-in-out infinite 2.5s" }} />
+        <span className="absolute w-[55px] h-[280px] rounded-full bg-gray-800/12 dark:bg-white/9 blur-[28px] bottom-0 left-[55%]" style={{ animation: "steamrise 5.8s ease-in-out infinite 3.5s" }} />
+        <span className="absolute w-[35px] h-[180px] rounded-full bg-gray-800/18 dark:bg-white/12 blur-[18px] bottom-0 left-[75%]" style={{ animation: "steamrise 4.8s ease-in-out infinite 1s" }} />
+      </div>
+
       <div className="max-w-[1200px] mx-auto px-7 relative z-[2]">
         <PegLine />
 
@@ -177,10 +185,10 @@ export default function Services() {
           <span className="text-[10.5px] font-bold tracking-[0.18em] uppercase text-brand-cyan block mb-3.5">
             Household Services
           </span>
-          <h2 className="font-display text-[clamp(26px,3vw,38px)] font-semibold leading-[1.15] mb-3.5">
+          <h2 className="font-display text-[clamp(26px,3vw,38px)] font-semibold leading-[1.15] mb-3.5 dark:text-white">
             Everything you drop off, done properly.
           </h2>
-          <p className="text-[#5B6870] leading-[1.75] text-[15px] font-light">
+          <p className="text-[#5B6870] dark:text-gray-400 leading-[1.75] text-[15px] font-light">
             Charged per kilogram, not per basket — weighed and invoiced on
             collection, so there are no surprises. Minimum 3kg (roughly 10 items).
           </p>
@@ -196,8 +204,8 @@ export default function Services() {
               <span className="text-[10.5px] font-bold tracking-[0.18em] uppercase text-brand-cyan block mb-1">
                 {s.eyebrow}
               </span>
-              <h3 className="font-display text-lg font-semibold mb-2">{s.title}</h3>
-              <p className="text-[13.5px] text-[#5B6870] leading-[1.65] font-light">{s.desc}</p>
+              <h3 className="font-display text-lg font-semibold mb-2 dark:text-white">{s.title}</h3>
+              <p className="text-[13.5px] text-[#5B6870] dark:text-gray-400 leading-[1.65] font-light">{s.desc}</p>
               <span className="font-display text-xs font-semibold text-brand-cyan mt-3 block">
                 {s.price}
               </span>

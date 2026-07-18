@@ -41,29 +41,28 @@ export default function OrderPage() {
     setSent(true);
   }
 
-  // mailto fallback - placeholder email since they don't have a public one
+  // mailto fallback - confirmed with owner via outreach
   function handleEmail() {
     const subject = encodeURIComponent("Laundry Order Request");
     const body = buildMessage();
-    // TODO: swap this placeholder with the real email once owner confirms
-    window.open(`mailto:mail@houseoflaundry.co.za?subject=${subject}&body=${body}`, "_blank");
+    window.open(`mailto:sandile@houseoflaundry.co.za?subject=${subject}&body=${body}`, "_blank");
     setSent(true);
   }
 
   return (
-    <section className="pt-[100px] pb-28 bg-brand-silver-light min-h-screen">
+    <section className="pt-[100px] pb-28 bg-brand-silver-light dark:bg-brand-char-mid min-h-screen">
       <div className="max-w-[800px] mx-auto px-7">
         <span className="text-[10.5px] font-bold tracking-[0.18em] uppercase text-brand-cyan block mb-3.5">
           Order Basket
         </span>
-        <h1 className="font-display text-3xl font-semibold mb-2">Your laundry request</h1>
-        <p className="text-[#5B6870] text-[15px] font-light mb-10">
+        <h1 className="font-display text-3xl font-semibold mb-2 dark:text-white">Your laundry request</h1>
+        <p className="text-[#5B6870] dark:text-gray-400 text-[15px] font-light mb-10">
           Add items below, then send your request straight to the shop via WhatsApp or email. No payment needed here — they'll confirm pricing and arrange collection.
         </p>
 
         {/* add items section */}
         <div className="glass-panel rounded-[20px] p-6 mb-6">
-          <h3 className="font-display font-semibold text-base mb-4">Add items to your order</h3>
+          <h3 className="font-display font-semibold text-base mb-4 dark:text-white">Add items to your order</h3>
           {Object.entries(categories).map(([cat, items]) => (
             <div key={cat} className="mb-4">
               <h4 className="text-[11px] font-bold tracking-[0.14em] uppercase text-brand-cyan mb-2">{cat}</h4>
@@ -136,7 +135,7 @@ export default function OrderPage() {
         {/* contact details + send */}
         {cart.length > 0 && (
           <div className="glass-panel rounded-[20px] p-6">
-            <h3 className="font-display font-semibold text-base mb-4">Your details</h3>
+            <h3 className="font-display font-semibold text-base mb-4 dark:text-white">Your details</h3>
             <div className="grid md:grid-cols-2 gap-4 mb-4">
               <div>
                 <label className="text-[12.5px] font-semibold block mb-1.5">Your name</label>

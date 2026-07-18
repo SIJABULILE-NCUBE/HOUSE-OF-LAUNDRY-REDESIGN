@@ -1,35 +1,35 @@
-// commercial linen categories - hover to reveal the photo behind each card
-// 3 have real stock photos, 3 are placeholders until the owner sends real ones
+// commercial linen categories - real photos taken at the actual branches,
+// provided by the owner (Sandile) after he agreed to this redesign concept
 const LINEN_TYPES = [
   {
     label: "Hotel & Restaurant Linen",
-    img: "https://images.unsplash.com/photo-1724847885015-be191f1a47ef?fm=jpg&q=85&w=900&auto=format&fit=crop&ixlib=rb-4.1.0",
-    alt: "Folded linen stacked on a rack",
+    img: "/images/hotel-restaurant-linen.jpeg",
+    alt: "Shelves of folded linen with a staff member behind the counter",
   },
   {
     label: "Food & Beverage Linen",
-    img: "https://images.unsplash.com/photo-1752805869096-9b149e6effa1?fm=jpg&q=85&w=900&auto=format&fit=crop&ixlib=rb-4.1.0",
-    alt: "Commercial washing machine drum",
+    img: "/images/food-beverage-linen.jpeg",
+    alt: "Shelves of folded white towels and robes",
   },
   {
     label: "Hospital Ward & Theatre Linen",
-    img: null,
-    placeholder: "Photo placeholder — hospital ward & theatre linen",
+    img: "/images/hospital-ward-theatre-linen.jpeg",
+    alt: "Shelves of folded green hospital theatre linen",
   },
   {
     label: "Hotel Guest Dry Cleaning",
-    img: null,
-    placeholder: "Photo placeholder — guest dry cleaning",
+    img: "/images/hotel-guest-dry-cleaning.jpeg",
+    alt: "Washing machines with laundry baskets ready for collection",
   },
   {
     label: "Table Linen, Curtains & Pillows",
-    img: null,
-    placeholder: "Photo placeholder — table linen, curtains, pillows & walk-off mats",
+    img: "/images/table-linen-curtains-pillows.jpeg",
+    alt: "Staff member folding a large white sheet next to the price list",
   },
   {
     label: "Uniforms & Chair Covers",
-    img: "https://images.unsplash.com/photo-1647202152259-98fe50ad0618?fm=jpg&q=85&w=900&auto=format&fit=crop&ixlib=rb-4.1.0",
-    alt: "Pressing garments on an ironing board",
+    img: "/images/uniforms-chair-covers.jpeg",
+    alt: "Four staff members in matching blue uniforms",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function Commercial() {
           <span className="text-[10.5px] font-bold tracking-[0.18em] uppercase text-brand-cyan block mb-3.5">
             Industries We Service
           </span>
-          <h2 className="font-display text-2xl font-semibold leading-[1.15]">
+          <h2 className="font-display text-2xl font-semibold leading-[1.15] dark:text-white">
             Trusted across ten sectors.
           </h2>
         </div>
@@ -103,7 +103,7 @@ export default function Commercial() {
           {INDUSTRIES.map((ind) => (
             <span
               key={ind}
-              className="px-5 py-2.5 rounded-full text-[12.5px] font-medium glass-panel text-[#48555D] hover:border-brand-cyan hover:text-brand-cyan hover:-translate-y-0.5 transition-all cursor-default"
+              className="px-5 py-2.5 rounded-full text-[12.5px] font-medium glass-panel text-[#48555D] dark:text-gray-300 hover:border-brand-cyan hover:text-brand-cyan hover:-translate-y-0.5 transition-all cursor-default"
             >
               {ind}
             </span>
