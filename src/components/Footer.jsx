@@ -121,10 +121,8 @@ export default function Footer() {
             <h5 className="text-[11px] tracking-[0.16em] uppercase opacity-45 mb-4 font-semibold">Get In Touch</h5>
             <a href="tel:0117493229" className="block text-[13.5px] opacity-75 mb-2 font-light hover:opacity-100 hover:text-brand-cyan-soft transition-all">011 749 3229</a>
             <a href="tel:0681609757" className="block text-[13.5px] opacity-75 mb-2 font-light hover:opacity-100 hover:text-brand-cyan-soft transition-all">068 160 9757</a>
+            <a href="mailto:sandile@houseoflaundry.co.za" className="block text-[13.5px] opacity-75 mb-2 font-light hover:opacity-100 hover:text-brand-cyan-soft transition-all">sandile@houseoflaundry.co.za</a>
             <a href="https://wa.me/27780263836" target="_blank" rel="noopener noreferrer" className="block text-[13.5px] opacity-75 mb-2 font-light hover:opacity-100 hover:text-brand-cyan-soft transition-all">WhatsApp us</a>
-            <span className="block text-[11.5px] opacity-40 italic mt-2.5">
-              Email address to be confirmed with the owner — no public address is currently listed.
-            </span>
             <h5 className="text-[11px] tracking-[0.16em] uppercase opacity-45 mt-6 mb-4 font-semibold">Hours</h5>
             <span className="block text-[13.5px] opacity-75 font-light">7am – 6pm, 7 days a week</span>
           </div>
