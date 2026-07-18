@@ -1,14 +1,15 @@
 import { useCart } from "../context/CartContext";
+import SteamIron from "./SteamIron";
 
-// the clothesline with swaying pegs - each peg holds a service tag
+// the clothesline with swaying pegs - traditional wooden peg shape, glass pink
 function PegLine() {
   const tags = ["Wash & Fold", "Dry Cleaning", "Takkie Wash", "Alterations"];
   const positions = ["12%", "34%", "56%", "78%"];
   const delays = ["0s", "-1.4s", "-2.7s", "-0.7s"];
 
   return (
-    <div className="relative h-[120px] mb-[-30px] hidden md:block">
-      {/* the washing line itself */}
+    <div className="relative h-[130px] mb-[-30px] hidden md:block">
+      {/* the washing line */}
       <div
         className="absolute top-[22px] left-0 right-0 h-[2px]"
         style={{ background: "linear-gradient(90deg, transparent, #CBD3D8 8%, #CBD3D8 92%, transparent)" }}
@@ -16,7 +17,7 @@ function PegLine() {
       {tags.map((tag, i) => (
         <div
           key={tag}
-          className="absolute top-[8px]"
+          className="absolute top-[6px]"
           style={{
             left: positions[i],
             transformOrigin: "top center",
@@ -24,14 +25,32 @@ function PegLine() {
             animationDelay: delays[i],
           }}
         >
-          {/* the peg SVG */}
-          <svg viewBox="0 0 24 44" className="w-[26px] mx-auto">
-            <path d="M8 4 L8 26 M16 4 L16 26" stroke="#9AA6AE" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-            <rect x="5" y="10" width="14" height="30" rx="3" fill="#CBD3D8" stroke="#9AA6AE" strokeWidth="1" />
-            <circle cx="12" cy="20" r="2.4" fill="#9AA6AE" />
+          {/* traditional wooden clothespin / peg - glass pink */}
+          <svg viewBox="0 0 30 56" className="w-[28px] mx-auto drop-shadow-md">
+            {/* top spring/grip area */}
+            <path d="M7 6 C7 3 10 1 15 1 C20 1 23 3 23 6 L23 22 L7 22 Z"
+              fill="url(#pinkglass)" stroke="rgba(219,112,147,0.6)" strokeWidth="0.8" />
+            {/* left prong */}
+            <path d="M8 22 L8 50 C8 53 10 55 12 55 L13 55 L13 22 Z"
+              fill="url(#pinkglass)" stroke="rgba(219,112,147,0.5)" strokeWidth="0.8" />
+            {/* right prong */}
+            <path d="M17 22 L17 55 L18 55 C20 55 22 53 22 50 L22 22 Z"
+              fill="url(#pinkglass)" stroke="rgba(219,112,147,0.5)" strokeWidth="0.8" />
+            {/* spring in the middle */}
+            <ellipse cx="15" cy="22" rx="5" ry="3" fill="rgba(219,112,147,0.35)" stroke="rgba(219,112,147,0.5)" strokeWidth="0.6" />
+            {/* glass highlight */}
+            <path d="M10 4 C11 3 13 2.5 15 3 L14 12 L10 10 Z" fill="rgba(255,255,255,0.45)" />
+            {/* gradient definition */}
+            <defs>
+              <linearGradient id="pinkglass" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stopColor="rgba(255,182,203,0.85)" />
+                <stop offset="50%" stopColor="rgba(219,112,147,0.7)" />
+                <stop offset="100%" stopColor="rgba(255,182,203,0.6)" />
+              </linearGradient>
+            </defs>
           </svg>
           {/* hanging tag */}
-          <div className="mt-1.5 px-3.5 py-1.5 rounded-lg text-[11px] font-semibold whitespace-nowrap glass-panel text-[#39464E]">
+          <div className="mt-1.5 px-3.5 py-1.5 rounded-lg text-[11px] font-semibold whitespace-nowrap glass-panel text-[#39464E] dark:text-gray-300">
             {tag}
           </div>
         </div>
@@ -149,8 +168,9 @@ export default function Services() {
   const { addItem } = useCart();
 
   return (
-    <section id="services" className="py-28 bg-brand-silver-light">
-      <div className="max-w-[1200px] mx-auto px-7">
+    <section id="services" className="py-28 bg-brand-silver-light dark:bg-brand-char-mid relative overflow-hidden">
+      <SteamIron side="right" />
+      <div className="max-w-[1200px] mx-auto px-7 relative z-[2]">
         <PegLine />
 
         <div className="max-w-[640px] mb-14">
