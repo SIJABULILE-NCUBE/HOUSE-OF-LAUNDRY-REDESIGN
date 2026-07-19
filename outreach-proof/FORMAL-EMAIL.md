@@ -13,7 +13,7 @@ Dear Mr Sandile,
 
 I hope you are doing well. Thank you again for taking the time to speak with me on WhatsApp a little while ago, and for so generously agreeing to let me take on House of Laundry & Dry Cleaners as the subject of my student project. As promised, I am now following up with a full, formal write-up of what I have done, why I made the choices I made, and how everything works — along with a live link so you can see it for yourself.
 
-**You can view the live preview here:** [PASTE YOUR NETLIFY LINK HERE]
+**You can view the live preview here:** [house-of-laundry.netlify.app]
 
 ## A Little About Me and This Project
 
@@ -78,4 +78,3 @@ LinkedIn: linkedin.com/in/sijabulilemn
 
 ---
 
-*Note: Before sending, the live Netlify deployment link must be pasted in where indicated near the top of this email.*
