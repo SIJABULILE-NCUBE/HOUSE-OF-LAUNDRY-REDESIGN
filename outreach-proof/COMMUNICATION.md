@@ -88,7 +88,12 @@ Reaching out to the real owner:
 
 ### Formal follow-up email
 
-Once the formal email (see `FORMAL-EMAIL.md`) was sent to the owner with the live link, a screenshot of the sent email was also saved here as proof of delivery.
+Once the formal email (see `FORMAL-EMAIL.md`) was sent to the owner with the live link, screenshots of the sent email (from the Gmail Sent folder) were saved here as proof of delivery.
 
-![Screenshot of the sent formal email](email-sent.png)
+![Screenshot of the sent formal email, part 1 — subject line and opening](email-sent-1.png)
 
+![Screenshot of the sent formal email, part 2 — services breakdown and order page explanation](email-sent-2.png)
+
+![Screenshot of the sent formal email, part 3 — reviews, payment method and transparency note](email-sent-3.png)
+
+![Screenshot of the sent formal email, part 4 — sign-off and contact details](email-sent-4.png)
