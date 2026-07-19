@@ -106,21 +106,23 @@ I deliberately chose a design direction that felt premium and trustworthy, while
 - **Silver / charcoal base** — a light, airy "silver-light" background for most sections, with a darker charcoal used for the hero and select accents, giving the site a premium, modern feel rather than a plain white template
 - **Cyan accent** — a refined version of the business's real turquoise/cyan brand colour, used for headings, prices, icons and highlights
 - **Pink glass accent** — used specifically for the traditional wooden clothes pegs, giving them a distinctive, tactile look
+- **Light blue bubbles** — a saturated, clearly visible light blue used for the floating bubbles in the hero section
 - **Ocean blue bubbles** — clean sky-blue bubbles and foam used decoratively on the branch cards, evoking clean water rather than murky or heavy tones
-- **Full dark mode** — every section, heading and paragraph has a matching dark-mode colour so text stays clearly readable whether a visitor is in light or dark mode, rather than reusing the same colour in both
+- **Full dark mode** — every section, heading, label, input field and paragraph has a matching dark-mode colour so text stays clearly readable whether a visitor is in light or dark mode, rather than reusing the same colour in both. This required a dedicated pass to catch places (form inputs, labels, item names on the order page, contact details) where text was accidentally the same dark colour in both modes and effectively invisible on a dark background
 
 **Typography**
 - **Outfit** — used for headings and display text, giving a confident, modern feel
 - **Inter** — used for body text and paragraphs, chosen for its clarity and readability at small sizes
 
 **Logo**
-Their real wave-and-hanger logo could not be copied directly (see Section 7), so I recreated the shape myself as an SVG graphic in the same colours. It is clearly marked in the code with a comment so it can be swapped for the real logo file at any time.
+Their real wave-and-hanger logo could not be copied directly (see Section 8), so I recreated the shape myself as an SVG graphic in the same colours. It is clearly marked in the code with a comment so it can be swapped for the real logo file at any time.
 
 **Animation & decorative details**
 - **Rising steam** — soft, blurred shapes that continuously drift upward in the Services and Branches sections, in dark grey for light mode and white for dark mode so they stay visible against either background
-- **Floating bubbles** — layered, softly-lit circles in the hero section that drift and pulse gently
+- **Floating bubbles** — layered, softly-lit light-blue circles in the hero section that drift and pulse gently
 - **Swaying pegs** — a row of traditional wooden clothes-peg graphics hanging from a washing line, each gently swaying and holding a small tag naming a service
 - **Ocean-blue bubbles and foam** — decorative bubble clusters inside each branch card, evoking suds and clean water
+- **Laundry Tip of the Day bubble** — redesigned into a large, centred, cloud-shaped glass bubble that bounces gently and continuously to draw the eye, with a glowing lightbulb icon (a soft pulsing yellow halo behind it) to reinforce the "tip" idea visually, not just with an emoji
 
 ---
 
@@ -130,7 +132,7 @@ Their real wave-and-hanger logo could not be copied directly (see Section 7), so
 The landing page, featuring a full-bleed hero photo with a glass panel overlay, the business's real motto, branch count, opening hours and delivery radius shown immediately, followed by the Services, Commercial, Branches and Reviews sections in sequence.
 
 **Services page**
-All six household services shown as individual cards with real pricing, icons, and a peg-and-washing-line decorative header. Selected services include a direct "add to order" button linking straight into the order basket.
+All six household services shown as individual cards with real pricing, icons, and a peg-and-washing-line decorative header. Every single card has a clearly visible dark-blue "+ Add to order" button (with white text so it's readable in both light and dark mode) linking straight into the order basket — this was refined after initial feedback that only one service card had this option, which made it look like the feature only worked for one service rather than all of them.
 
 **Commercial page**
 The business's commercial and industrial offering, shown using real photographs sourced from their website and Instagram (with the owner's permission), covering hotel linen, food & beverage linen, hospital theatre linen, hotel guest dry cleaning, table linen/curtains/pillows, and uniforms/chair covers. All ten industries they serve are listed as a set of pills underneath.
@@ -142,7 +144,7 @@ All four real branches, each shown as its own card with the real address, real o
 A set of sample customer reviews (clearly documented as realistic sample content, not scraped real testimonials — see Section 9) with a star rating, a name and phone number, and a working "like" button that increases and decreases a like count when tapped. A "Laundry Tip of the Day" banner sits above the reviews, cycling automatically through ten real laundry care tips based on the calendar date.
 
 **Order page**
-A fully functional order basket. A visitor can browse services grouped by category, add items with a single tap, adjust quantities, see a running total calculated live, and then send the whole compiled request straight to the business via WhatsApp or email with one click. No payment is processed anywhere on the site — it is a request tool, not a checkout.
+A fully functional order basket. A visitor can browse services grouped by category, add items with a single tap, adjust quantities, see a running total calculated live, select a **preferred payment method** (cash on collection/delivery, EFT, or card — clearly labelled as a stated preference only, since there is no real payment processor connected), and then send the whole compiled request straight to the business via WhatsApp or email with one click. No payment is actually processed anywhere on the site — it is a request tool, not a checkout.
 
 **Contact page**
 A simple, direct way to get in touch: real phone numbers, the real (owner-confirmed) email address, and a WhatsApp link, alongside a basic contact form.
@@ -190,7 +192,20 @@ The goal of the project was to demonstrate my ability to research a real busines
 
 ---
 
-## 10. Technical Summary
+## 10. Iterative Refinements
+
+Building this project was not a single, one-shot process — it went through several rounds of review and refinement, much as a real client project would. Some of the changes made along the way:
+
+- **Real photo swaps** — after the owner's permission was granted and initial photos were sourced, two of the commercial linen photos (Food & Beverage Linen and Hospital Ward & Theatre Linen) were later swapped out for more accurate real photographs once I identified better matches.
+- **Dark mode accessibility pass** — after testing the site properly in dark mode, I found several places (form inputs on the Order and Contact pages, item names and labels in the order basket) where text was rendering in a dark colour on a dark background, making it unreadable. I went through both pages systematically and corrected every instance.
+- **Consistency fix on the "Add to order" buttons** — originally only one service card had a quick-add button, which made it look like ordering only worked for that one service. I updated every card so the option is consistent and clearly visible (solid dark blue with white text) across the whole Services page.
+- **Payment method clarity** — added a simple payment preference selector to the order basket, being careful to label it honestly as a stated preference rather than a real payment step, since no payment gateway is connected.
+- **Visual polish on the Laundry Tip of the Day** — the tip banner initially sat awkwardly off to one side with a lot of empty space around it. I redesigned it into a large, centred, cloud-shaped bubble with a gentle bounce animation and a glowing lightbulb icon so it properly draws attention and fills the space intentionally.
+- **Colour refinements** — adjusted the hero section's floating bubbles to a clearly visible, saturated light blue after an initial version was too subtle to read as blue at a glance.
+
+I've included this section deliberately, because I think it's honest about how real design work actually happens — not perfect on the first attempt, but refined through review, much like working with a real client would involve rounds of feedback.
+
+## 11. Technical Summary
 
 - **Framework:** React 18, using functional components and hooks throughout (`useState`, `useContext`)
 - **Styling:** Tailwind CSS v3, with a custom theme extension for the brand's colours and fonts
@@ -202,7 +217,7 @@ The goal of the project was to demonstrate my ability to research a real busines
 
 ---
 
-## 11. Conclusion
+## 12. Conclusion
 
 House of Laundry & Dry Cleaners is a strong, established business whose website simply hadn't kept pace with how well the business itself operates. This redesign aims to close that gap — presenting the business as the professional, multi-branch, full-service operation it genuinely is, while keeping its real identity, real content and real personality intact.
 

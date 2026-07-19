@@ -26,8 +26,8 @@ export default function ContactPage() {
             >
               <span className="text-2xl">💬</span>
               <div>
-                <span className="text-sm font-semibold block">WhatsApp</span>
-                <span className="text-[12px] text-[#5B6870]">+27 78 026 3836</span>
+                <span className="text-sm font-semibold block dark:text-white">WhatsApp</span>
+                <span className="text-[12px] text-[#5B6870] dark:text-gray-400">+27 78 026 3836</span>
               </div>
             </a>
 
@@ -37,8 +37,8 @@ export default function ContactPage() {
             >
               <span className="text-2xl">📞</span>
               <div>
-                <span className="text-sm font-semibold block">Main line</span>
-                <span className="text-[12px] text-[#5B6870]">011 749 3229</span>
+                <span className="text-sm font-semibold block dark:text-white">Main line</span>
+                <span className="text-[12px] text-[#5B6870] dark:text-gray-400">011 749 3229</span>
               </div>
             </a>
 
@@ -48,8 +48,8 @@ export default function ContactPage() {
             >
               <span className="text-2xl">📞</span>
               <div>
-                <span className="text-sm font-semibold block">Dube Village branch</span>
-                <span className="text-[12px] text-[#5B6870]">068 160 9757</span>
+                <span className="text-sm font-semibold block dark:text-white">Dube Village branch</span>
+                <span className="text-[12px] text-[#5B6870] dark:text-gray-400">068 160 9757</span>
               </div>
             </a>
           </div>
@@ -58,16 +58,16 @@ export default function ContactPage() {
           <div className="glass-panel rounded-[20px] p-6">
             <h3 className="font-display font-semibold text-base mb-4 dark:text-white">Send a message</h3>
             <div className="mb-3">
-              <label className="text-[12.5px] font-semibold block mb-1.5">Your name</label>
-              <input type="text" placeholder="Full name" className="w-full bg-white/50 border border-brand-silver-300 rounded-lg px-3.5 py-2.5 text-sm" />
+              <label className="text-[12.5px] font-semibold block mb-1.5 dark:text-gray-200">Your name</label>
+              <input type="text" placeholder="Full name" className="w-full bg-white/50 dark:bg-white/10 dark:text-white border border-brand-silver-300 dark:border-gray-600 rounded-lg px-3.5 py-2.5 text-sm" />
             </div>
             <div className="mb-3">
-              <label className="text-[12.5px] font-semibold block mb-1.5">Your email</label>
-              <input type="email" placeholder="you@example.com" className="w-full bg-white/50 border border-brand-silver-300 rounded-lg px-3.5 py-2.5 text-sm" />
+              <label className="text-[12.5px] font-semibold block mb-1.5 dark:text-gray-200">Your email</label>
+              <input type="email" placeholder="you@example.com" className="w-full bg-white/50 dark:bg-white/10 dark:text-white border border-brand-silver-300 dark:border-gray-600 rounded-lg px-3.5 py-2.5 text-sm" />
             </div>
             <div className="mb-4">
-              <label className="text-[12.5px] font-semibold block mb-1.5">Message</label>
-              <textarea rows={3} placeholder="Tell us what you need..." className="w-full bg-white/50 border border-brand-silver-300 rounded-lg px-3.5 py-2.5 text-sm" />
+              <label className="text-[12.5px] font-semibold block mb-1.5 dark:text-gray-200">Message</label>
+              <textarea rows={3} placeholder="Tell us what you need..." className="w-full bg-white/50 dark:bg-white/10 dark:text-white border border-brand-silver-300 dark:border-gray-600 rounded-lg px-3.5 py-2.5 text-sm" />
             </div>
             <a
               href="mailto:sandile@houseoflaundry.co.za"
@@ -75,7 +75,7 @@ export default function ContactPage() {
             >
               Send Email
             </a>
-            <p className="text-[11px] text-[#9AA6AE] mt-3">
+            <p className="text-[11px] text-[#9AA6AE] dark:text-gray-400 mt-3">
               sandile@houseoflaundry.co.za
             </p>
           </div>

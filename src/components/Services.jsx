@@ -1,4 +1,4 @@
-import { useCart } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 // the clothesline with swaying pegs - traditional wooden peg shape, glass pink
 function PegLine() {
@@ -164,8 +164,6 @@ const SERVICES = [
 ];
 
 export default function Services() {
-  const { addItem } = useCart();
-
   return (
     <section id="services" className="py-28 bg-brand-silver-light dark:bg-brand-char-mid relative overflow-hidden">
       {/* background steam that rises across the section */}
@@ -210,15 +208,13 @@ export default function Services() {
                 {s.price}
               </span>
 
-              {/* quick-add button if this service has a direct cart mapping */}
-              {s.cartId && (
-                <button
-                  onClick={() => addItem(s.cartId)}
-                  className="mt-3 text-[11px] font-semibold text-brand-cyan border border-brand-cyan/30 rounded-full px-3 py-1 hover:bg-brand-cyan hover:text-white transition-all"
-                >
-                  + Add to order
-                </button>
-              )}
+              {/* every service links to the order page, where the exact item/size/type can be picked */}
+              <Link
+                to="/order"
+                className="mt-3 inline-block text-[11px] font-semibold text-white bg-blue-900 dark:bg-blue-700 border border-blue-900 dark:border-blue-700 rounded-full px-3 py-1.5 hover:bg-blue-800 dark:hover:bg-blue-600 transition-all"
+              >
+                + Add to order
+              </Link>
             </div>
           ))}
         </div>

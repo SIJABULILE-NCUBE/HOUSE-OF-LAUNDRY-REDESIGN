@@ -95,16 +95,36 @@ export default function Reviews() {
   return (
     <section id="reviews" className="py-28 bg-brand-silver-light dark:bg-brand-charcoal relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-7 relative z-[2]">
-        {/* daily laundry tip banner */}
-        <div className="glass-panel rounded-[20px] p-[28px_32px] mb-16 flex items-start gap-4">
-          <div className="text-3xl flex-shrink-0">💡</div>
-          <div>
-            <span className="text-[10.5px] font-bold tracking-[0.18em] uppercase text-brand-cyan block mb-1.5">
-              Laundry Tip of the Day
-            </span>
-            <p className="text-[15px] text-[#48555D] dark:text-gray-300 leading-[1.6] font-light">
-              {tipOfTheDay}
-            </p>
+        {/* daily laundry tip - large, centered, cloud-shaped bubble that bounces to catch the eye */}
+        <div className="flex justify-center py-16 mb-10">
+          <div
+            className="glass-panel dark:!border-brand-cyan-soft/40 dark:!shadow-[0_0_60px_rgba(111,208,227,0.15)] relative max-w-[680px] w-full text-center px-14 py-14"
+            style={{
+              borderRadius: "50% 50% 48% 52% / 60% 55% 45% 40%",
+              animation: "tipbounce 2.4s ease-in-out infinite",
+            }}
+          >
+            {/* small cloud "bumps" to reinforce the cloud shape */}
+            <div className="absolute -top-5 left-12 w-12 h-12 rounded-full glass-panel" />
+            <div className="absolute -top-8 right-20 w-16 h-16 rounded-full glass-panel" />
+            <div className="absolute -bottom-4 left-1/3 w-10 h-10 rounded-full glass-panel" />
+
+            <div className="relative z-[2]">
+              {/* lightbulb with a warm glowing halo behind it */}
+              <div className="relative inline-block mb-4">
+                <div
+                  className="absolute inset-0 rounded-full bg-yellow-300 dark:bg-yellow-200 blur-2xl"
+                  style={{ animation: "bulbglow 2.4s ease-in-out infinite" }}
+                />
+                <div className="relative text-6xl">💡</div>
+              </div>
+              <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-brand-cyan dark:text-brand-cyan-soft block mb-3">
+                Laundry Tip of the Day
+              </span>
+              <p className="text-[18px] text-[#48555D] dark:text-gray-200 leading-[1.7] font-light">
+                {tipOfTheDay}
+              </p>
+            </div>
           </div>
         </div>
 
