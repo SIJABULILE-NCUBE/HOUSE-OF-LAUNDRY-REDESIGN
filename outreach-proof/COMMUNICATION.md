@@ -67,10 +67,8 @@ I would love to hear any thoughts you have, whether positive or things you'd wan
 
 Warm regards,
 Sijabulile Ncube
-Software Development Student
+Software Engineering Student
 Email: s.mabhena@gmail.com
-GitHub: github.com/SIJABULILE-NCUBE
-Portfolio: sijabulile-ncube.github.io
 LinkedIn: linkedin.com/in/sijabulilemn
 
 ---

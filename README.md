@@ -6,16 +6,6 @@ This project was developed as **Company Project 1** for my Software Development 
 
 ---
 
-## 🚀 Project Status
-
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![React](https://img.shields.io/badge/React-18-61DAFB)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-v3-38BDF8)
-![Vite](https://img.shields.io/badge/Vite-Build-646CFF)
-![License](https://img.shields.io/badge/License-Educational-blue)
-
----
-
 # 🔗 Important Links
 
 | Resource | Link |
