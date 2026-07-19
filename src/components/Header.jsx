@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 
 // recreating their wave/hanger logo as an SVG
@@ -19,9 +19,33 @@ function WaveLogo() {
 export default function Header() {
   const { cart } = useCart();
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // total items in basket for the badge
   const itemCount = cart.reduce((sum, item) => sum + item.qty, 0);
+
+  // these sections live on the Home page - clicking them should smooth-scroll
+  // there instead of navigating to a separate stripped-down page
+  function scrollToSection(id) {
+    setMenuOpen(false);
+    if (location.pathname === "/") {
+      // already home - just scroll
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // navigate home first, then scroll once the page has rendered
+      navigate("/");
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 150);
+    }
+  }
+
+  function toggleTheme() {
+    document.documentElement.classList.toggle("dark");
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[rgba(12,14,16,0.55)] backdrop-blur-xl border-b border-white/10 text-white">
@@ -42,25 +66,25 @@ export default function Header() {
           <Link to="/" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
             Home
           </Link>
-          <Link to="/services" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
+          <button onClick={() => scrollToSection("services")} className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all bg-transparent border-0 cursor-pointer">
             Services
-          </Link>
-          <Link to="/commercial" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
+          </button>
+          <button onClick={() => scrollToSection("commercial")} className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all bg-transparent border-0 cursor-pointer">
             Commercial
-          </Link>
-          <Link to="/branches" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
+          </button>
+          <button onClick={() => scrollToSection("branches")} className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all bg-transparent border-0 cursor-pointer">
             Branches
-          </Link>
-          <Link to="/reviews" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
+          </button>
+          <button onClick={() => scrollToSection("reviews")} className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all bg-transparent border-0 cursor-pointer">
             Reviews
-          </Link>
+          </button>
           <Link to="/contact" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
             Contact
           </Link>
 
           {/* dark/light mode toggle */}
           <button
-            onClick={() => document.documentElement.classList.toggle("dark")}
+            onClick={toggleTheme}
             className="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-sm hover:bg-white/20 transition-all"
             aria-label="Toggle dark mode"
           >
@@ -102,14 +126,24 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden bg-brand-charcoal/95 backdrop-blur-xl border-t border-white/10 px-7 py-6 flex flex-col gap-4">
           <Link to="/" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Home</Link>
-          <Link to="/services" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Services</Link>
-          <Link to="/commercial" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Commercial</Link>
-          <Link to="/branches" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Branches</Link>
-          <Link to="/reviews" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Reviews</Link>
+          <button onClick={() => scrollToSection("services")} className="text-sm font-medium opacity-80 text-left bg-transparent border-0 cursor-pointer">Services</button>
+          <button onClick={() => scrollToSection("commercial")} className="text-sm font-medium opacity-80 text-left bg-transparent border-0 cursor-pointer">Commercial</button>
+          <button onClick={() => scrollToSection("branches")} className="text-sm font-medium opacity-80 text-left bg-transparent border-0 cursor-pointer">Branches</button>
+          <button onClick={() => scrollToSection("reviews")} className="text-sm font-medium opacity-80 text-left bg-transparent border-0 cursor-pointer">Reviews</button>
           <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Contact</Link>
           <Link to="/order" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">
             Order Basket {itemCount > 0 && `(${itemCount})`}
           </Link>
+
+          {/* dark/light toggle - now available on mobile too */}
+          <button
+            onClick={toggleTheme}
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm w-fit hover:bg-white/20 transition-all"
+            aria-label="Toggle dark mode"
+          >
+            <span className="dark:hidden">☾ Switch to dark mode</span>
+            <span className="hidden dark:inline">☀ Switch to light mode</span>
+          </button>
         </div>
       )}
     </header>
