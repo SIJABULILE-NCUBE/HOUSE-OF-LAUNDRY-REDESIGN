@@ -5,6 +5,10 @@ const CartContext = createContext();
 
 // all the real services + prices from their actual price list
 const SERVICE_CATALOG = [
+  { id: "laundry-wash", category: "Laundry", name: "Wash Only (per kg)", price: 13 },
+  { id: "laundry-washdry", category: "Laundry", name: "Wash & Dry (per kg)", price: 17 },
+  { id: "laundry-dry", category: "Laundry", name: "Dry Only (per kg)", price: 14 },
+  { id: "laundry-full", category: "Laundry", name: "Full House: Wash, Dry & Iron (per kg)", price: 25 },
   { id: "dry-trouser", category: "Dry Cleaning", name: "Trouser", price: 55 },
   { id: "dry-jacket", category: "Dry Cleaning", name: "Jacket", price: 65 },
   { id: "dry-skirt", category: "Dry Cleaning", name: "Skirt", price: 60 },
@@ -25,6 +29,13 @@ const SERVICE_CATALOG = [
   { id: "dye-lumber", category: "Dyeing", name: "Lumber Jackets", price: 150 },
   { id: "dye-chino", category: "Dyeing", name: "Chino / Trousers", price: 100 },
   { id: "iron-kg", category: "Ironing", name: "Iron only (per kg)", price: 22 },
+  { id: "alt-length", category: "Alterations", name: "Length", price: 35 },
+  { id: "alt-waist", category: "Alterations", name: "Waist", price: 40 },
+  { id: "alt-bottom", category: "Alterations", name: "Bottom", price: 35 },
+  { id: "alt-zips", category: "Alterations", name: "Zips", price: 30 },
+  { id: "alt-patching", category: "Alterations", name: "Patching (from)", price: 20 },
+  { id: "alt-shirt-length", category: "Alterations", name: "Shirt Length", price: 35 },
+  { id: "alt-dress-length", category: "Alterations", name: "Dress Length", price: 40 },
 ];
 
 export function CartProvider({ children }) {

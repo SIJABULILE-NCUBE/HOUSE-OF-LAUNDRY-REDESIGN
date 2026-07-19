@@ -123,7 +123,7 @@ const SERVICES = [
     eyebrow: "Laundry",
     title: "Wash, Dry, Fold & Iron",
     desc: "Personal clothing, staff uniforms, bedroom linen, duvet covers, blankets and towelling. Charged per kg, not per item.",
-    price: "Per kg · 3kg minimum",
+    price: "R13–R25 per kg · 3kg minimum",
   },
   {
     icon: <IronIcon />,
@@ -159,7 +159,7 @@ const SERVICES = [
     eyebrow: "Alterations",
     title: "Get The Right Fit",
     desc: "Available in-store at every branch — ask for a quote.",
-    price: "Quoted in-store",
+    price: "From R20 · Waist/Dress R40",
   },
 ];
 
