@@ -51,6 +51,9 @@ export default function Header() {
           <Link to="/branches" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
             Branches
           </Link>
+          <Link to="/reviews" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
+            Reviews
+          </Link>
           <Link to="/contact" className="text-[13.5px] font-medium opacity-75 hover:opacity-100 hover:text-brand-cyan-soft transition-all">
             Contact
           </Link>
@@ -102,6 +105,7 @@ export default function Header() {
           <Link to="/services" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Services</Link>
           <Link to="/commercial" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Commercial</Link>
           <Link to="/branches" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Branches</Link>
+          <Link to="/reviews" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Reviews</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">Contact</Link>
           <Link to="/order" onClick={() => setMenuOpen(false)} className="text-sm font-medium opacity-80">
             Order Basket {itemCount > 0 && `(${itemCount})`}

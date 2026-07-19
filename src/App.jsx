@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Commercial from "./components/Commercial";
 import Branches from "./components/Branches";
+import Reviews from "./components/Reviews";
 import Footer from "./components/Footer";
 import OrderPage from "./components/OrderPage";
 import ContactPage from "./components/ContactPage";
@@ -18,6 +19,7 @@ function HomePage() {
       <Services />
       <Commercial />
       <Branches />
+      <Reviews />
     </>
   );
 }
@@ -35,6 +37,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/commercial" element={<Commercial />} />
             <Route path="/branches" element={<Branches />} />
+            <Route path="/reviews" element={<Reviews />} />
             <Route path="/order" element={<OrderPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
