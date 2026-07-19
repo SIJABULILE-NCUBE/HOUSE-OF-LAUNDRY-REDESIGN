@@ -10,12 +10,12 @@ This project was developed as **Company Project 1** for my Software Development 
 
 | Resource | Link |
 |-----------|------|
-| 🌐 Live Website | **PASTE NETLIFY LINK HERE** |
+| 🌐 Live Website | **house-of-laundry.netlify.app** |
 | 💻 GitHub Repository | https://github.com/SIJABULILE-NCUBE/HOUSE-OF-LAUNDRY-REDESIGN |
 | 🎥 Loom Walkthrough | **PASTE LOOM LINK HERE** |
 | 🏢 Original Business Website | https://houseoflaundry.co.za |
 | 👤 GitHub Profile | https://github.com/SIJABULILE-NCUBE |
-| 🌐 Portfolio | https://sijabulile-ncube.github.io |
+| 
 
 ---
 
