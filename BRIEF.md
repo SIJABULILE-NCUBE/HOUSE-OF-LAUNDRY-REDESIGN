@@ -14,7 +14,7 @@ This document is the brief for my Company Project 1. The assignment was to find 
 
 Rather than choosing a large company or inventing a fictional business, I wanted to work with a genuine small business where a better website could make a real difference. I chose **House of Laundry & Dry Cleaners**, a family-oriented laundry and dry-cleaning business operating four branches across Soweto.
 
-Importantly, this is a **student project built for learning purposes**. Before starting, I reached out to the business owner directly and was given permission to recreate the website as a concept. The owner even shared real photographs of the branches for me to use. A record of that conversation is included in the `outreach-proof/` folder. This means the project is not just a hypothetical exercise — it was done with the knowledge and blessing of the actual business.
+Importantly, this is a **student project built for learning purposes**. Before starting, I reached out to the business owner directly and was given permission to recreate the website as a concept for study purposes. With that permission, I sourced real photographs of the branches from the business's own website and their public Instagram page, rather than using generic stock imagery. A record of that conversation is included in the `outreach-proof/` folder. This means the project is not just a hypothetical exercise — it was done with the knowledge and blessing of the actual business.
 
 ---
 
@@ -110,7 +110,7 @@ My redesign keeps everything that works about the business and presents it in a 
 
 **Content presentation**
 - All real services laid out clearly with real, transparent pricing
-- A dedicated commercial & industrial section with real photographs of the branches (provided by the owner), including hospital linen, hotel linen, uniforms and more
+- A dedicated commercial & industrial section with real photographs of the branches (sourced from their website and Instagram page, with the owner's permission), including hospital linen, hotel linen, uniforms and more
 - All ten industries they serve, displayed clearly
 - All four branches with real addresses, click-to-call buttons and Google Maps directions
 
@@ -132,13 +132,26 @@ My redesign keeps everything that works about the business and presents it in a 
 
 ## 6. Photographs & Permissions
 
-The photographs used in the commercial section are **real photographs of the actual business**, provided to me directly by the owner after he agreed to the project. They show the branches, staff in uniform, folded linen and the working environment. Using real photos (with permission) makes the redesign far more authentic than stock imagery would.
+The photographs used in the commercial section are **real photographs of the actual business**. I sourced them myself from the business's website and their public Instagram page, after the owner agreed I could recreate the site for study purposes. They show the branches, staff in uniform, folded linen and the working environment. Using real photos (with the owner's permission to do so) makes the redesign far more authentic than stock imagery would.
 
 Where a real photo was not available, a clearly-labelled placeholder or a royalty-free stock image was used, and these are noted in the code so they can easily be replaced later.
 
 ---
 
-## 7. A Note on the Nature of This Project
+## 7. Protecting My Work
+
+Before sharing this project with the business owner, I was conscious of an important concern: since this redesign uses the real business's name, content and branding, I wanted to make sure the owner could view and evaluate my work without it being taken and used without my knowledge or agreement — while still being genuinely useful and shareable for him to look at.
+
+To address this, I took the following steps:
+
+- **I only shared a live preview link, not the source code.** The owner (and anyone else) can view and interact with the site, but the underlying React and Tailwind code, the GitHub repository, and my project files were not handed over. Viewing a website is not the same as being able to copy and reuse its code.
+- **I was explicit, in writing, that this is a "concept" and a student project**, not a finished commercial handover. This sets a clear expectation that further use of the design — for example, actually taking it live as their real website — would be a separate conversation and agreement between us, not something that happens automatically just because the link was shared.
+- **My name is credited in the footer of the site itself** ("Redesign concept by Sijabulile Ncube"), so authorship is visible on the work, not just in a document that could be separated from it.
+- **I kept the formal email professional and dated**, creating a written record of when the concept was shared and under what terms, should it ever need to be referred back to.
+
+I want to be upfront that I am not a lawyer, and this project does not rely on any formal legal contract — it is a student project shared in good faith with a business owner who has already been generous and supportive. These steps are reasonable, practical precautions rather than a legal protection, but they do make my authorship clear and set honest expectations about what is being shared and why.
+
+## 8. A Note on the Nature of This Project
 
 This is a **student project created for educational purposes** as part of my web development course. While it was built with the owner's permission and using real business information, it is a redesign *concept* and is not the business's official live website. Some elements — such as the customer reviews — are realistic sample content included to demonstrate how the feature would work, rather than scraped real testimonials. The email capture and order features are functional demonstrations rather than a live commercial system.
 
@@ -146,7 +159,7 @@ The goal of the project was to demonstrate my ability to research a real busines
 
 ---
 
-## 8. Conclusion
+## 9. Conclusion
 
 House of Laundry & Dry Cleaners is a strong, established business whose website simply hadn't kept pace with how well the business itself operates. This redesign aims to close that gap — presenting the business as the professional, multi-branch, full-service operation it genuinely is, while keeping its real identity, real content and real personality intact.
 
