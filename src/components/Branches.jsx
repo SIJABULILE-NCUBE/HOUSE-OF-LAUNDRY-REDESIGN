@@ -37,12 +37,25 @@ const BRANCHES = [
 export default function Branches() {
   return (
     <section id="branches" className="py-28 bg-brand-silver-light dark:bg-brand-char-mid relative overflow-hidden">
-      {/* background steam */}
+      {/* background steam - solid visible puffs rising in columns */}
       <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden">
-        <span className="absolute w-[45px] h-[230px] rounded-full bg-gray-800/14 dark:bg-white/10 blur-[22px] bottom-0 left-[6%]" style={{ animation: "steamrise 5.5s ease-in-out infinite" }} />
-        <span className="absolute w-[55px] h-[270px] rounded-full bg-gray-800/12 dark:bg-white/8 blur-[28px] bottom-0 left-[45%]" style={{ animation: "steamrise 6s ease-in-out infinite 1.5s" }} />
-        <span className="absolute w-[40px] h-[200px] rounded-full bg-gray-800/16 dark:bg-white/10 blur-[20px] bottom-0 right-[10%]" style={{ animation: "steamrise 5s ease-in-out infinite 0.8s" }} />
-        <span className="absolute w-[50px] h-[250px] rounded-full bg-gray-800/12 dark:bg-white/8 blur-[25px] bottom-0 right-[30%]" style={{ animation: "steamrise 6.2s ease-in-out infinite 2.5s" }} />
+        {/* column 1 */}
+        <span className="steam-puff absolute w-[14px] h-[14px] bottom-[8%] left-[8%]" style={{ animation: "steamrise 4.3s ease-in-out infinite 0s" }} />
+        <span className="steam-puff absolute w-[18px] h-[18px] bottom-[8%] left-[7%]" style={{ animation: "steamrise 4.3s ease-in-out infinite 1s" }} />
+        <span className="steam-puff absolute w-[22px] h-[22px] bottom-[8%] left-[9%]" style={{ animation: "steamrise 4.3s ease-in-out infinite 2s" }} />
+        <span className="steam-puff absolute w-[26px] h-[26px] bottom-[8%] left-[8%]" style={{ animation: "steamrise 4.3s ease-in-out infinite 3s" }} />
+
+        {/* column 2 */}
+        <span className="steam-puff absolute w-[15px] h-[15px] bottom-[10%] left-[42%]" style={{ animation: "steamrise 4.7s ease-in-out infinite 0.6s" }} />
+        <span className="steam-puff absolute w-[19px] h-[19px] bottom-[10%] left-[41%]" style={{ animation: "steamrise 4.7s ease-in-out infinite 1.6s" }} />
+        <span className="steam-puff absolute w-[23px] h-[23px] bottom-[10%] left-[43%]" style={{ animation: "steamrise 4.7s ease-in-out infinite 2.6s" }} />
+        <span className="steam-puff absolute w-[27px] h-[27px] bottom-[10%] left-[42%]" style={{ animation: "steamrise 4.7s ease-in-out infinite 3.6s" }} />
+
+        {/* column 3 */}
+        <span className="steam-puff absolute w-[14px] h-[14px] bottom-[9%] right-[12%]" style={{ animation: "steamrise 4s ease-in-out infinite 0.4s" }} />
+        <span className="steam-puff absolute w-[18px] h-[18px] bottom-[9%] right-[11%]" style={{ animation: "steamrise 4s ease-in-out infinite 1.4s" }} />
+        <span className="steam-puff absolute w-[22px] h-[22px] bottom-[9%] right-[13%]" style={{ animation: "steamrise 4s ease-in-out infinite 2.4s" }} />
+        <span className="steam-puff absolute w-[26px] h-[26px] bottom-[9%] right-[12%]" style={{ animation: "steamrise 4s ease-in-out infinite 3.4s" }} />
       </div>
 
       <div className="max-w-[1200px] mx-auto px-7 relative z-[2]">

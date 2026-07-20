@@ -166,14 +166,31 @@ const SERVICES = [
 export default function Services() {
   return (
     <section id="services" className="py-28 bg-brand-silver-light dark:bg-brand-char-mid relative overflow-hidden">
-      {/* background steam that rises across the section */}
+      {/* background steam - solid visible puffs rising in columns, same technique as the working bubbles */}
       <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden">
-        <span className="absolute w-[40px] h-[200px] rounded-full bg-gray-800/15 dark:bg-white/10 blur-[20px] bottom-0 left-[8%]" style={{ animation: "steamrise 5s ease-in-out infinite" }} />
-        <span className="absolute w-[50px] h-[250px] rounded-full bg-gray-800/12 dark:bg-white/8 blur-[25px] bottom-0 left-[30%]" style={{ animation: "steamrise 6s ease-in-out infinite 1.5s" }} />
-        <span className="absolute w-[60px] h-[300px] rounded-full bg-gray-800/14 dark:bg-white/10 blur-[30px] bottom-0 right-[12%]" style={{ animation: "steamrise 5.5s ease-in-out infinite 0.8s" }} />
-        <span className="absolute w-[45px] h-[220px] rounded-full bg-gray-800/10 dark:bg-white/7 blur-[22px] bottom-0 right-[35%]" style={{ animation: "steamrise 6.5s ease-in-out infinite 2.5s" }} />
-        <span className="absolute w-[55px] h-[280px] rounded-full bg-gray-800/12 dark:bg-white/9 blur-[28px] bottom-0 left-[55%]" style={{ animation: "steamrise 5.8s ease-in-out infinite 3.5s" }} />
-        <span className="absolute w-[35px] h-[180px] rounded-full bg-gray-800/18 dark:bg-white/12 blur-[18px] bottom-0 left-[75%]" style={{ animation: "steamrise 4.8s ease-in-out infinite 1s" }} />
+        {/* column 1 */}
+        <span className="steam-puff absolute w-[14px] h-[14px] bottom-[10%] left-[10%]" style={{ animation: "steamrise 4s ease-in-out infinite 0s" }} />
+        <span className="steam-puff absolute w-[18px] h-[18px] bottom-[10%] left-[9%]" style={{ animation: "steamrise 4s ease-in-out infinite 1s" }} />
+        <span className="steam-puff absolute w-[22px] h-[22px] bottom-[10%] left-[11%]" style={{ animation: "steamrise 4s ease-in-out infinite 2s" }} />
+        <span className="steam-puff absolute w-[26px] h-[26px] bottom-[10%] left-[10%]" style={{ animation: "steamrise 4s ease-in-out infinite 3s" }} />
+
+        {/* column 2 */}
+        <span className="steam-puff absolute w-[16px] h-[16px] bottom-[8%] left-[35%]" style={{ animation: "steamrise 4.5s ease-in-out infinite 0.5s" }} />
+        <span className="steam-puff absolute w-[20px] h-[20px] bottom-[8%] left-[34%]" style={{ animation: "steamrise 4.5s ease-in-out infinite 1.5s" }} />
+        <span className="steam-puff absolute w-[24px] h-[24px] bottom-[8%] left-[36%]" style={{ animation: "steamrise 4.5s ease-in-out infinite 2.5s" }} />
+        <span className="steam-puff absolute w-[28px] h-[28px] bottom-[8%] left-[35%]" style={{ animation: "steamrise 4.5s ease-in-out infinite 3.5s" }} />
+
+        {/* column 3 */}
+        <span className="steam-puff absolute w-[15px] h-[15px] bottom-[12%] right-[15%]" style={{ animation: "steamrise 3.8s ease-in-out infinite 0.3s" }} />
+        <span className="steam-puff absolute w-[19px] h-[19px] bottom-[12%] right-[14%]" style={{ animation: "steamrise 3.8s ease-in-out infinite 1.3s" }} />
+        <span className="steam-puff absolute w-[23px] h-[23px] bottom-[12%] right-[16%]" style={{ animation: "steamrise 3.8s ease-in-out infinite 2.3s" }} />
+        <span className="steam-puff absolute w-[27px] h-[27px] bottom-[12%] right-[15%]" style={{ animation: "steamrise 3.8s ease-in-out infinite 3.3s" }} />
+
+        {/* column 4 */}
+        <span className="steam-puff absolute w-[14px] h-[14px] bottom-[9%] right-[38%]" style={{ animation: "steamrise 4.2s ease-in-out infinite 0.8s" }} />
+        <span className="steam-puff absolute w-[18px] h-[18px] bottom-[9%] right-[37%]" style={{ animation: "steamrise 4.2s ease-in-out infinite 1.8s" }} />
+        <span className="steam-puff absolute w-[22px] h-[22px] bottom-[9%] right-[39%]" style={{ animation: "steamrise 4.2s ease-in-out infinite 2.8s" }} />
+        <span className="steam-puff absolute w-[26px] h-[26px] bottom-[9%] right-[38%]" style={{ animation: "steamrise 4.2s ease-in-out infinite 3.8s" }} />
       </div>
 
       <div className="max-w-[1200px] mx-auto px-7 relative z-[2]">

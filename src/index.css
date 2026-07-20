@@ -31,10 +31,23 @@
 }
 
 @keyframes steamrise {
-  0% { transform: translateY(0) scaleX(1); opacity: 0; }
-  10% { opacity: 0.8; }
-  50% { opacity: 0.5; }
-  100% { transform: translateY(-350px) scaleX(2.2); opacity: 0; }
+  0% { transform: translateY(0) scale(0.7); opacity: 0; }
+  15% { opacity: 0.9; transform: translateY(-20px) scale(0.9); }
+  60% { opacity: 0.7; }
+  100% { transform: translateY(-200px) scale(1.6); opacity: 0; }
+}
+
+/* solid, visible steam puffs - same technique as the working bubbles,
+   just toned in soft grey/white so it reads as steam not water */
+.steam-puff {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.9) 0%, rgba(180,190,196,0.6) 40%, rgba(150,160,168,0.15) 100%);
+  box-shadow: 0 0 12px rgba(180,190,196,0.4);
+}
+.dark .steam-puff {
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.95) 0%, rgba(220,226,230,0.7) 40%, rgba(200,208,214,0.15) 100%);
+  box-shadow: 0 0 16px rgba(255,255,255,0.35);
 }
 
 /* dark mode overrides for glass panels */
