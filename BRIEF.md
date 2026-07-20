@@ -1,7 +1,7 @@
 # Project Brief :House of Laundry & Dry Cleaners Website Redesign
 
 **Student:** Sijabulile Ncube
-**Project:** Company Project 1 — Real Business Website Redesign
+**Project:** Company Project 1 : Real Business Website Redesign
 **GitHub:** github.com/SIJABULILE-NCUBE
 **Portfolio:** sijabulile-ncube.github.io
 **Client:** House of Laundry & Dry Cleaners (Soweto, Johannesburg)
