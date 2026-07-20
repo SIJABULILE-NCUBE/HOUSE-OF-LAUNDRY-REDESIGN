@@ -15,7 +15,7 @@ This document is the brief for my Company Project 1. The assignment was to find 
 
 Rather than choosing a large company or inventing a fictional business, I wanted to work with a genuine small business where a better website could make a real difference. I chose **House of Laundry & Dry Cleaners**, a family-oriented laundry and dry-cleaning business operating four branches across Soweto.
 
-Importantly, this is a **student project built for learning purposes**. Before starting, I reached out to the business owner directly and was given permission to recreate the website as a concept for study purposes. With that permission, I sourced real photographs of the branches from the business's own website and their public Instagram page, rather than using generic stock imagery. A full record of that conversation — including the WhatsApp transcript and the formal follow-up email — is included in the `outreach-proof/` folder. This means the project is not just a hypothetical exercise; it was carried out with the knowledge and blessing of the actual business.
+Importantly, this is a **student project built for learning purposes**. Before starting, I reached out to the business owner directly and was given permission to recreate the website as a concept for study purposes. With that permission, I sourced real photographs of the branches from the business's own website and their public Instagram page, rather than using generic stock imagery. A full record of that conversation , including the WhatsApp transcript and the formal follow-up email  is included in the `outreach-proof/` folder. This means the project is not just a hypothetical exercise; it was carried out with the knowledge and blessing of the actual business.
 
 ---
 
@@ -58,11 +58,11 @@ They serve clients across ten sectors including healthcare, hospitality, food an
 
 I chose House of Laundry for several reasons:
 
-1. **It is a real, active business.** It has multiple branches, real contact numbers, an active WhatsApp line and social media presence. The business is clearly operating and serving customers — the website simply doesn't reflect how established they are.
+1. **It is a real, active business.** It has multiple branches, real contact numbers, an active WhatsApp line and social media presence. The business is clearly operating and serving customers , the website simply doesn't reflect how established they are.
 
 2. **The content is genuinely interesting to work with.** The business does far more than basic laundry. The commercial and industrial side (hospital theatre linen, hotel linen, SANS-standard washing) gives real depth to design around, rather than a thin services page.
 
-3. **Their pricing model is a hidden strength.** They charge per kilogram rather than per item, which is actually a customer-friendly selling point — but on the current site it is buried and hard to find.
+3. **Their pricing model is a hidden strength.** They charge per kilogram rather than per item, which is actually a customer-friendly selling point  but on the current site it is buried and hard to find.
 
 4. **They have a distinctive brand identity.** Their turquoise/cyan wave-and-hanger logo and their "We do it with pride" motto are memorable. These weren't being used to their full potential, which gave me a clear creative starting point.
 
@@ -83,18 +83,18 @@ The footer still displays "Copyright © 2020," and there is a COVID-19 informati
 On the current site, several images do not load and appear as broken image icons. This is almost certainly a technical issue with how the images were linked rather than anything the owner did wrong, but the effect is that a first-time visitor sees empty boxes where photos of the shop should be.
 
 **c) The pricing is hard to find.**
-The per-kilogram pricing — which is one of the business's genuine advantages — is not prominent. A visitor has to actively search for it. Bringing pricing to the surface makes the service feel more transparent and trustworthy.
+The per-kilogram pricing — which is one of the business's genuine advantages is not prominent. A visitor has to actively search for it. Bringing pricing to the surface makes the service feel more transparent and trustworthy.
 
 **d) The layout is built on an older template.**
-The site was put together on a basic hosting template, which was a sensible and affordable choice at the time. However, it limits how modern and professional the site can look, and it doesn't adapt as smoothly to mobile phones — which is how most of the business's customers would browse.
+The site was put together on a basic hosting template, which was a sensible and affordable choice at the time. However, it limits how modern and professional the site can look, and it doesn't adapt as smoothly to mobile phones  which is how most of the business's customers would browse.
 
 **e) There is no easy way to place a request online.**
 Despite offering collection, delivery and commercial contracts, the current site has no online way to compile an order or request a pickup. Customers must phone or message. Adding a simple request tool removes friction for busy customers.
 
 **f) The overall presentation undersells the business.**
-The business is established, professional and offers an impressive range of services — but the current website makes it look smaller and less active than it is. The biggest opportunity is simply to present the business as well as it actually operates.
+The business is established, professional and offers an impressive range of services  but the current website makes it look smaller and less active than it is. The biggest opportunity is simply to present the business as well as it actually operates.
 
-To be clear: none of this reflects poorly on the owner. Getting any website online is an achievement, and the foundations — real content, a real brand, real services — are all there. The redesign is about building on that foundation and bringing it up to date.
+To be clear: none of this reflects poorly on the owner. Getting any website online is an achievement, and the foundations — real content, a real brand, real services  are all there. The redesign is about building on that foundation and bringing it up to date.
 
 ---
 
@@ -166,16 +166,16 @@ Where a real photo was not available or appropriate, a clearly-labelled placehol
 
 ## 8. Protecting My Work
 
-Before sharing this project with the business owner, I was conscious of an important concern: since this redesign uses the real business's name, content and branding, I wanted to make sure the owner could view and evaluate my work without it being taken and used without my knowledge or agreement — while still being genuinely useful and shareable for him to look at.
+Before sharing this project with the business owner, I was conscious of an important concern: since this redesign uses the real business's name, content and branding, I wanted to make sure the owner could view and evaluate my work without it being taken and used without my knowledge or agreement  while still being genuinely useful and shareable for him to look at.
 
 To address this, I took the following steps:
 
 - **I only shared a live preview link, not the source code.** The owner (and anyone else) can view and interact with the site, but the underlying React and Tailwind code, the GitHub repository, and my project files were not handed over. Viewing a website is not the same as being able to copy and reuse its code.
-- **I was explicit, in writing, that this is a "concept" and a student project**, not a finished commercial handover. This sets a clear expectation that further use of the design — for example, actually taking it live as their real website — would be a separate conversation and agreement between us, not something that happens automatically just because the link was shared.
+- **I was explicit, in writing, that this is a "concept" and a student project**, not a finished commercial handover. This sets a clear expectation that further use of the design ,for example, actually taking it live as their real website — would be a separate conversation and agreement between us, not something that happens automatically just because the link was shared.
 - **My name is credited in the footer of the site itself** ("Redesign concept by Sijabulile Ncube"), so authorship is visible on the work, not just in a document that could be separated from it.
 - **I kept the formal email professional and dated**, creating a written record of when the concept was shared and under what terms, should it ever need to be referred back to.
 
-I want to be upfront that I am not a lawyer, and this project does not rely on any formal legal contract — it is a student project shared in good faith with a business owner who has already been generous and supportive. These steps are reasonable, practical precautions rather than a legal protection, but they do make my authorship clear and set honest expectations about what is being shared and why.
+I want to be upfront that I am not a lawyer, and this project does not rely on any formal legal contract .It is a student project shared in good faith with a business owner who has already been generous and supportive. These steps are reasonable, practical precautions rather than a legal protection, but they do make my authorship clear and set honest expectations about what is being shared and why.
 
 ---
 
