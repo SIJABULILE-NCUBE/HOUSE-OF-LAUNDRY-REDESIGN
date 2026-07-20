@@ -16,8 +16,8 @@
   35% { left: 120%; }
 }
 @keyframes sway {
-  0%, 100% { transform: rotate(-2.2deg); }
-  50% { transform: rotate(2.2deg); }
+  0%, 100% { transform: rotate(-9deg); }
+  50% { transform: rotate(9deg); }
 }
 
 @keyframes tipbounce {
