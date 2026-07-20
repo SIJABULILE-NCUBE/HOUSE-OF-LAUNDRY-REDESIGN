@@ -1,4 +1,4 @@
-# Project Brief — House of Laundry & Dry Cleaners Website Redesign
+# Project Brief :House of Laundry & Dry Cleaners Website Redesign
 
 **Student:** Sijabulile Ncube
 **Project:** Company Project 1 — Real Business Website Redesign
